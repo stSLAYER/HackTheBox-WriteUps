@@ -11,7 +11,7 @@ There are only 2 open ports (22, 80)
 
 **Default page on port 80**
 
-![[Pasted image 20210622112035.png]]
+![alt text](https://github.com/stSLAYER/HackTheBox-WriteUps/blob/main/Armageddon/screenshots/Pasted%20image%2020210622112035.png)
 
 The layout of the page is that of a Drupal page, along side with the name "armageddon", this leads me to believe that the exploit to be used will be Druppalgeddon. https://github.com/dreadlocked/Drupalgeddon2
 </br>
