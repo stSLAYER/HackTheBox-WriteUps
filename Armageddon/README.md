@@ -1,3 +1,10 @@
+# Nmap scan report for 10.10.10.245 <br>
+
+PORT   STATE SERVICE <br>
+21/tcp open  ftp <br>
+22/tcp open  ssh <br>
+80/tcp open  http <br>
+
 <h2>Foothold</h2>
 
 There are only 2 open ports (22, 80)
