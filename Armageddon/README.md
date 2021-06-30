@@ -28,7 +28,7 @@ Now that I have a shell on the system I can do some user enumeration, I'll start
 ![alt text](https://github.com/stSLAYER/HackTheBox-WriteUps/blob/main/Armageddon/screenshots/Pasted%20image%2020210622124047.png)
 <!--![[Pasted image 20210622124047.png]] -->
 
-I can see an interesting/potential user tha i might be able to gain access to.
+I can see an interesting/potential user that I might be able to gain access to.
 
 	brucetherealadmin:x:1000:1000::/home/brucetherealadmin:/bin/bash
 
@@ -57,7 +57,7 @@ Running the command sudo -l will reveal the current user's sudo permissions:
 After doing some research on '/usr/bin/snap install *', it seems that the dirty_socks exploit will be used
  https://github.com/initstring/dirty_sock/blob/master/dirty_sockv2.py
  
- The exploit itself does'nt work, but there is a piece of code that we can manually look at as well as use on it's own:
+ The exploit itself doesn't work, but there is a piece of code that we can manually look at as well as use on it's own:
  
  ![alt text](https://github.com/stSLAYER/HackTheBox-WriteUps/blob/main/Armageddon/screenshots/Pasted%20image%2020210622140554.png)
  <!--![[Pasted image 20210622140554.png]]-->
@@ -75,12 +75,12 @@ After doing some research on '/usr/bin/snap install *', it seems that the dirty_
 ![alt text](https://github.com/stSLAYER/HackTheBox-WriteUps/blob/main/Armageddon/screenshots/Pasted%20image%2020210622141040.png)
 <!--![[Pasted image 20210622141040.png]]-->
 
-I can confirm that this exploit worked by looking at the ''/etc/passwd' file, looking at the bottom I can see that the user dirty_sock was added:
+I can confirm that this exploit worked by looking at the '/etc/passwd' file, looking at the bottom I can see that the user dirty_sock was added:
 
 ![alt text](https://github.com/stSLAYER/HackTheBox-WriteUps/blob/main/Armageddon/screenshots/Pasted%20image%2020210622141124.png)
 <!--![[Pasted image 20210622141124.png]]-->
 
-Now I can sudo su as root using the user dirty_sock:
+Now I can 'sudo su' as root with the user dirty_sock:
 
 ![alt text](https://github.com/stSLAYER/HackTheBox-WriteUps/blob/main/Armageddon/screenshots/Pasted%20image%2020210622140046.png)
 <!--![[Pasted image 20210622140046.png]]-->
