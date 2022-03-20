@@ -7,7 +7,7 @@ PORT   STATE SERVICE <br>
 
 <h2>Foothold</h2>
 
-There are only 2 open ports (22, 80)
+There are only 3 open ports (21, 22, 80)
 
 **Default page on port 80**
 
